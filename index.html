@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <div id="homeContainer">
+            <button id="btnStart" class="btn btn--block btn--primary">Empezar <i class="fas fa-arrow-right"></i></button>
+            <a href="highscores.html" class="btn btn--block btn--outline">Ir a puntajes</a>
+        </div>
+        <div id="quiz" class="quiz hide">
+            <div class="quiz__header">
+                <p id="counterContainer" class="quiz__counter">${counter}</p>
+                <div class="quiz__score">
+                    <span>Score</span>
+                    <p id="scoreContainer">0</p>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div id="progressBar" class="progress-bar__bar">
+                </div>
+            </div>
+           
+            <h2 id="quizQuestion">${question}</h2>
+            <!--Quiz options-->
+            <div id="quizOptions" class="quiz__options"></div>
+        
+        </div>
+
+        <template id="templateFeedback">
+           <div id="feedbackContainer" class="quiz__feedback-answers">
+                <p>${questionOut}</p>
+           </div>
+        </template>
+        <template id="templateOption">
+            <div class="quiz__option">
+                <input type="radio">
+                <label>${option}</label>
+                <div class="quiz__radio"></div>
+            </div>
+        </template>
+    </div>
+
+    <!--defer para cargar el script luego de que cargue la página
+        No usar window.onload o window.addEventListener('load')-->
+    <script src="app.js" defer></script>
+</body>
+</html>
