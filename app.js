@@ -1,21 +1,36 @@
 let questions = [
     {
         id: 1607227675486,
-        question: 'Cuánto es 1 + 1',
-        options: ['2', '4','8'],
-        answer: '1'
-    },
-    {
-        id:1607227694378,
-        question: 'Cuánto es 3 * 2',
-        options: ['2', '6','3'],
+        question: '¿Cuándo se estrenó Los Vengadores?',
+        options: [
+            " 2 de mayo de 2008 " ,
+            " 4 de mayo de 2012 " ,
+            " 3 de mayo de 2013 " ,
+            " 4 de abril de 2014 "
+            ],
         answer: '2'
     },
     {
+        id:1607227694378,
+        question: '¿Cuánto es 65 x 52?',
+        options: [
+            "117" ,
+            "3120" ,
+            "3380" ,
+            "3520"
+        ],
+        answer: '3'
+    },
+    {
         id:1607227708277,
-        question: 'Mi lenguaje favorito es..',
-        options: ['Javascript', '<3','IDK'],
-        answer: '1'
+        question: '¿Cuál es la capital de España?',
+        options: [
+            "Berlín" ,
+            "Buenos Aires" ,
+            "Madrid" ,
+            "San Juan"
+        ],
+        answer: '3'
     }
 ]
 const homeContainer =document.getElementById('homeContainer')

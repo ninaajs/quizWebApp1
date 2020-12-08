@@ -11,7 +11,7 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <p id="scoreContainer">Tu puntaje: </p>
+    <p class="score" id="scoreContainer">Tu puntaje: </p>
     <form id="formUser">
         <input 
         id="userName" 
@@ -20,7 +20,12 @@
         placeholder="Ingresa tu nombre">
         <button id="btnScore" class="btn btn--primary">Guardar</button>
     </form>
-
+    <ul id="highscoresContainer">
+       
+    </ul>
+    <template id="templateHighscores">
+        <li class="list-item">${user/score}</li>
+    </template>
     <script src="end.js" defer></script>
 </body>
 </html>
